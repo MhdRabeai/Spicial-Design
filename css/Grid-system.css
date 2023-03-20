@@ -1,0 +1,115 @@
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  .landing .container .header .links {
+    display: none;
+  }
+  .landing .container .header .links.open {
+    background-color: white;
+    padding: 20px;
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    height: 175px;
+    width: 150px;
+    border: 2px solid var(--main-color);
+  }
+  .landing .container .header .links.open::before {
+    content: "";
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    top: -20px;
+    right: 8px;
+  }
+  .landing .container .header .links.open li {
+    color: black;
+    display: block;
+    margin: 0px;
+    padding: 5px;
+    position: relative;
+    top: -15px;
+  }
+  .landing .container .header .links.open li a {
+    color: var(--main-color);
+    font-weight: bold;
+    margin: 0px;
+  }
+  .landing .header {
+    justify-content: space-between;
+  }
+  .landing .header .toggle {
+    display: inline-block;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about .info-box {
+    text-align: center;
+  }
+
+  .timeline .container .timeline-content .content p,
+  .timeline .container .timeline-content .content h3 {
+    text-align: center;
+  }
+  .features .feat-box img {
+    width: 70px;
+  }
+  .features .feat-box h4 {
+    font-size: 16px;
+  }
+  .contact .container form {
+    width: 500px;
+    flex-direction: column;
+  }
+  .contact .container form .left,
+  .contact .container form .right {
+    margin-right: 150px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .landing .header .toggle {
+    display: none;
+  }
+  .landing .container .header .links {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    width: 80%;
+  }
+  .landing .container .header .links li {
+    padding: 15px 10px;
+  }
+  .contact .container form {
+    width: 700px;
+    flex-direction: row;
+  }
+  .landing .container .header .links.open {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .landing .container .header .links {
+    font-size: 16px;
+  }
+  .landing .container .header .links li {
+    padding: 15px 10px;
+  }
+  .contact .container form {
+    width: 800px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
